@@ -20,6 +20,10 @@ const Hero = () => {
           </a>
         </div>
       </nav>
+      <div className="hero__title">
+        <h1 className="hero__title-name">Christian Uriel Ramírez Lara</h1>
+        <h2 className="hero__title-role">Desarrollador Front-End</h2>
+      </div>
     </header>
   );
 };
