@@ -1,4 +1,11 @@
 import './About.scss';
+import htmlIcon from './iconos/html-icon.svg';
+import cssIcon from './iconos/css-icon.svg';
+import jsIcon from './iconos/js-icon.svg';
+import reactIcon from './iconos/react-icon.svg';
+import sassIcon from './iconos/sass-icon.svg';
+import gitIcon from './iconos/git-icon.svg';
+import TechnologyIcon from '../../components/TechnologyIcon/TechnologyIcon';
 
 const About = () => {
   return (
@@ -22,9 +29,16 @@ const About = () => {
           en todo momento para platicar con usted.
         </p>
       </div>
-      <div className="about__technologies">
-        <h4 className="technologies__subtitle">Tecnologías que uso</h4>
-        <div className="technologies__icons"></div>
+      <div className="technologies">
+        <h4>Tecnologías que uso</h4>
+        <div className="technologies__icons">
+          <TechnologyIcon technologyIcon={htmlIcon} technologyName="HTML" />
+          <TechnologyIcon technologyIcon={cssIcon} technologyName="CSS" />
+          <TechnologyIcon technologyIcon={jsIcon} technologyName="Javascript" />
+          <TechnologyIcon technologyIcon={reactIcon} technologyName="React" />
+          <TechnologyIcon technologyIcon={sassIcon} technologyName="Sass" />
+          <TechnologyIcon technologyIcon={gitIcon} technologyName="Git" />
+        </div>
       </div>
     </section>
   );
