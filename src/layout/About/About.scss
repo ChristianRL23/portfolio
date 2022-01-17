@@ -14,6 +14,7 @@
     width: 100%;
     background-color: var(--primary-white-dark);
     padding: 2rem;
+    height: 24rem;
   }
 }
 
@@ -31,5 +32,27 @@
     &:not(:last-child) {
       margin-bottom: 0.6rem;
     }
+  }
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 90%;
+  padding: 2rem;
+  margin-top: -5.5rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+
+  &__subtitle {
+    @include sectionSubtitle;
+    margin-bottom: 2rem;
+  }
+
+  &__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }

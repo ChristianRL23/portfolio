@@ -30,7 +30,7 @@ const About = () => {
         </p>
       </div>
       <div className="technologies">
-        <h4>Tecnologías que uso</h4>
+        <h4 className="technologies__subtitle">Tecnologías que uso</h4>
         <div className="technologies__icons">
           <TechnologyIcon technologyIcon={htmlIcon} technologyName="HTML" />
           <TechnologyIcon technologyIcon={cssIcon} technologyName="CSS" />
