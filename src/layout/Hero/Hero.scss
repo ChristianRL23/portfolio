@@ -10,6 +10,7 @@
     url('./Hero.jpg');
   background-size: cover;
   position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 
   &__title {
     position: absolute;
