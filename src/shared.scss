@@ -1,3 +1,11 @@
 @mixin containerPadding {
   padding: 0 6rem;
 }
+
+@mixin sectionTitle {
+  color: var(--primary-gray-dark);
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  font-family: 'Inter';
+  font-weight: 500;
+}

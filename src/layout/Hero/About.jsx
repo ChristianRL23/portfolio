@@ -2,10 +2,10 @@ import './About.scss';
 
 const About = () => {
   return (
-    <section>
-      <h2>Acerca de mi</h2>
-      <div>
-        <h4>¿Quién soy yo?</h4>
+    <section className="about">
+      <h2 className="about__title">Acerca de mi</h2>
+      <div className="about__information">
+        <h4 className="information__subtitle">¿Quién soy yo?</h4>
         <p>
           Soy una persona responsable y profesional que le gusta el diseño web y
           ser minucioso con los detalles a fin de crear interfaces bonitas y
@@ -22,9 +22,9 @@ const About = () => {
           en todo momento para platicar con usted.
         </p>
       </div>
-      <div>
-        <h4>Tecnologías que uso</h4>
-        <div></div>
+      <div className="about__technologies">
+        <h4 className="technologies__subtitle">Tecnologías que uso</h4>
+        <div className="technologies__icons"></div>
       </div>
     </section>
   );
