@@ -5,6 +5,7 @@
   --general-white: #eee;
   --primary-gray: #666;
   --primary-gray-dark: #444;
+  --primary-white: #f3f3f3;
 }
 
 html {
@@ -19,4 +20,5 @@ html {
 
 body {
   font-family: 'Inter', sans-serif, 'Arial';
+  background-color: var(--primary-white);
 }
