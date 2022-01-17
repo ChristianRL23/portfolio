@@ -1,10 +1,43 @@
+@import './../../shared.scss';
+
 .hero {
   height: 100vh;
   background-image: linear-gradient(
       30deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
     ),
     url('./Hero.jpg');
   background-size: cover;
+}
+
+.navbar {
+  @include containerPadding;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  align-items: center;
+
+  &__left {
+    width: auto;
+  }
+
+  &__right {
+    width: auto;
+    &-link {
+      &:link,
+      &:visited {
+        font-weight: 300;
+        color: var(--general-white);
+        font-size: 2rem;
+        text-decoration: none;
+        &:not(:first-child) {
+          margin-left: 2rem;
+        }
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
