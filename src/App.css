@@ -3,6 +3,8 @@
 
 :root {
   --general-white: #eee;
+  --primary-gray: #666;
+  --primary-gray-dark: #444;
 }
 
 html {

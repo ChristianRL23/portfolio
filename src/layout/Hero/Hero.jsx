@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button';
 import Logo from '../../components/Logo/Logo';
 import './Hero.scss';
 
@@ -23,6 +24,7 @@ const Hero = () => {
       <div className="hero__title">
         <h1 className="hero__title-name">Christian Uriel Ramírez Lara</h1>
         <h2 className="hero__title-role">Desarrollador Front-End</h2>
+        <Button textContent="Contactar" />
       </div>
     </header>
   );
