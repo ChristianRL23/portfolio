@@ -9,4 +9,27 @@
   &__title {
     @include sectionTitle;
   }
+
+  &__information {
+    width: 100%;
+    background-color: var(--primary-white-dark);
+    padding: 2rem;
+  }
+}
+
+.information {
+  &__subtitle {
+    @include sectionSubtitle;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  &__text {
+    @include sectionText;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0.6rem;
+    }
+  }
 }
