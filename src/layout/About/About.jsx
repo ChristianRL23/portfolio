@@ -6,6 +6,10 @@ import reactIcon from './iconos/react-icon.svg';
 import sassIcon from './iconos/sass-icon.svg';
 import gitIcon from './iconos/git-icon.svg';
 import TechnologyIcon from '../../components/TechnologyIcon/TechnologyIcon';
+import tsIcon from './iconos/typescript.svg';
+import githubIcon from './iconos/github-icon-1.svg';
+import reduxIcon from './iconos/redux-icon.svg';
+import reactRouterIcon from './iconos/react-router-icon.svg';
 
 const About = () => {
   return (
@@ -28,16 +32,32 @@ const About = () => {
           lo que si es de su agrado la manera en la que trabajo estoy disponible
           en todo momento para platicar con usted.
         </p>
-      </div>
-      <div className="technologies">
-        <h4 className="technologies__subtitle">Tecnologías que uso</h4>
-        <div className="technologies__icons">
-          <TechnologyIcon technologyIcon={htmlIcon} technologyName="HTML" />
-          <TechnologyIcon technologyIcon={cssIcon} technologyName="CSS" />
-          <TechnologyIcon technologyIcon={jsIcon} technologyName="Javascript" />
-          <TechnologyIcon technologyIcon={reactIcon} technologyName="React" />
-          <TechnologyIcon technologyIcon={sassIcon} technologyName="Sass" />
-          <TechnologyIcon technologyIcon={gitIcon} technologyName="Git" />
+        <div className="technologies">
+          <h4 className="technologies__subtitle">Tecnologías que uso</h4>
+          <div className="technologies__icons">
+            <TechnologyIcon technologyIcon={htmlIcon} technologyName="HTML" />
+            <TechnologyIcon technologyIcon={cssIcon} technologyName="CSS" />
+            <TechnologyIcon
+              technologyIcon={jsIcon}
+              technologyName="Javascript"
+            />
+            <TechnologyIcon technologyIcon={reactIcon} technologyName="React" />
+            <TechnologyIcon
+              technologyIcon={tsIcon}
+              technologyName="TypeScript"
+            />
+            <TechnologyIcon technologyIcon={sassIcon} technologyName="Sass" />
+            <TechnologyIcon technologyIcon={reduxIcon} technologyName="Redux" />
+            <TechnologyIcon
+              technologyIcon={reactRouterIcon}
+              technologyName="React Router"
+            />
+            <TechnologyIcon technologyIcon={gitIcon} technologyName="Git" />
+            <TechnologyIcon
+              technologyIcon={githubIcon}
+              technologyName="Github"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -8,13 +8,13 @@
 
   &__title {
     @include sectionTitle;
+    margin-bottom: 2.5rem;
   }
 
   &__information {
     width: 100%;
     background-color: var(--primary-white-dark);
     padding: 2rem;
-    height: 24rem;
   }
 }
 
@@ -22,7 +22,7 @@
   &__subtitle {
     @include sectionSubtitle;
     text-align: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   &__text {
@@ -40,10 +40,9 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 90%;
+  width: 95%;
+  margin: 2rem auto 0 auto;
   padding: 2rem;
-  margin-top: -5.5rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
 
   &__subtitle {
     @include sectionSubtitle;
@@ -53,6 +52,9 @@
   &__icons {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    align-content: flex-start;
   }
 }
