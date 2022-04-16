@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.65) 0%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url('./Hero.jpg');
+    url('./Hero-3.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -27,7 +27,7 @@
     &-name {
       color: var(--general-white);
       letter-spacing: 1.5px;
-      font-size: 5rem;
+      font-size: 4.8rem;
       font-weight: 500;
       margin-bottom: 0.5rem;
     }
@@ -35,41 +35,9 @@
     &-role {
       letter-spacing: 2.2px;
       color: rgb(192, 192, 192);
-      font-size: 3.5rem;
+      font-size: 3.3rem;
       font-weight: 100;
       margin-bottom: 3rem;
-    }
-  }
-}
-
-.navbar {
-  @include containerPadding;
-  display: flex;
-  justify-content: space-between;
-  height: 10%;
-  align-items: center;
-
-  &__left {
-    width: auto;
-  }
-
-  &__right {
-    width: auto;
-    &-link {
-      &:link,
-      &:visited {
-        font-weight: 300;
-        color: var(--general-white);
-        font-size: 2rem;
-        text-decoration: none;
-        @include transition(color);
-        &:not(:first-child) {
-          margin-left: 4rem;
-        }
-      }
-      &:hover {
-        color: white;
-      }
     }
   }
 }

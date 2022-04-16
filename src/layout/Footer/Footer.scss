@@ -1,0 +1,10 @@
+@use './../../shared.scss' as s;
+
+.footer {
+  @include s.containerPadding;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--primary-gray-dark);
+  display: flex;
+  justify-content: center;
+}

@@ -5,26 +5,26 @@ import './Hero.scss';
 const Hero = () => {
   return (
     <header className="hero">
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="navbar__left">
           <Logo />
         </div>
         <div className="navbar__right">
           <a className="navbar__right-link" href="#">
-            Acerca
+            About
           </a>
           <a className="navbar__right-link" href="#">
-            Proyectos
+            Projects
           </a>
           <a className="navbar__right-link" href="#">
-            Contacto
+            Contact
           </a>
         </div>
-      </nav>
+      </nav> */}
       <div className="hero__title">
         <h1 className="hero__title-name">Christian Uriel Ramírez Lara</h1>
-        <h2 className="hero__title-role">Desarrollador Front-End</h2>
-        <Button textContent="Contactar" />
+        <h2 className="hero__title-role">Front-End Developer</h2>
+        <Button textContent="Download CV" />
       </div>
     </header>
   );

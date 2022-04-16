@@ -11,6 +11,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -22,4 +23,8 @@ html {
 body {
   font-family: 'Inter', sans-serif, 'Arial';
   background-color: var(--primary-white);
+}
+
+.app {
+  position: relative;
 }
