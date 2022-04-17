@@ -59,7 +59,7 @@
         margin: 0 auto;
         justify-content: center;
         gap: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
 
         &__tab {
           font-size: 1.5rem;
@@ -68,6 +68,14 @@
           font-weight: 600;
           cursor: pointer;
           position: relative;
+
+          @media screen and (max-width: 400px) {
+            font-size: 1.3rem;
+          }
+
+          @media screen and (max-width: 300px) {
+            font-size: 1.1rem;
+          }
 
           &--active {
             @extend .project__info__more__selector__tab;
@@ -105,6 +113,12 @@
       display: flex;
       justify-content: center;
       gap: 3rem;
+
+      @media screen and (max-width: 500px) {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+      }
     }
   }
 }
@@ -129,6 +143,22 @@
       font-size: 2.5rem;
       border: none;
       border-radius: 50%;
+
+      @media screen and (max-width: 900px) {
+        font-size: 2rem;
+        padding: 0.3rem 1rem;
+      }
+
+      @media screen and (max-width: 660px) {
+        background-color: rgba(255, 255, 255, 0.4);
+        font-size: 1.8rem;
+        padding: 0.2rem 0.8rem;
+      }
+
+      @media screen and (max-width: 530px) {
+        font-size: 1.3rem;
+        padding: 0.15rem 0.6rem;
+      }
     }
 
     &__back {

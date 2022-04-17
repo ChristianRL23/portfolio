@@ -20,6 +20,12 @@
   &__icons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -28,6 +34,18 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  min-width: 31rem;
+
+  @media screen and (max-width: 720px) {
+    min-width: 0;
+    width: 100%;
+  }
+
+  &:nth-child(2) {
+    @media screen and (max-width: 720px) {
+      order: -10;
+    }
+  }
 
   &__icon {
     background-color: #d6d6d6;
@@ -42,6 +60,15 @@
     img {
       width: 3rem;
       height: 3rem;
+
+      @media screen and (max-width: 450px) {
+        width: 2.7rem;
+        height: 2.7rem;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      padding: 1.5rem;
     }
   }
 
@@ -56,5 +83,6 @@
     color: #52525b;
     font-size: 1.6rem;
     font-weight: 400;
+    text-align: center;
   }
 }

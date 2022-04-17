@@ -1,5 +1,17 @@
 @mixin containerPadding {
   padding: 5.5rem 8rem;
+
+  @media screen and (max-width: 1000px) {
+    padding: 5.5rem 6rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: 5.5rem 4rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 5.5rem 2rem;
+  }
 }
 
 @mixin sectionTitle {

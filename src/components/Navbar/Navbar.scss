@@ -16,6 +16,21 @@
   background-color: var(--primary-gray-dark);
   @include s.transition(background-color);
 
+  @media screen and (max-width: 1000px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   &--transparent {
     @extend .navbar;
     background-color: transparent;
@@ -23,6 +38,10 @@
 
   &__left {
     width: auto;
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
   }
 
   &__right {
@@ -42,6 +61,35 @@
       &:hover {
         color: white;
       }
+    }
+  }
+
+  &__hamburger {
+    &-icon {
+      width: 3.5rem;
+
+      @media screen and (max-width: 470px) {
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.menu-wrap,
+.burger-menu,
+.menu {
+  background-color: var(--primary-white);
+}
+
+.bm-item {
+  background-color: transparent;
+  @include s.sectionSubtitle;
+}
+
+.close {
+  span {
+    svg {
+      color: var(--primary-gray-dark);
     }
   }
 }
