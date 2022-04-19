@@ -21,6 +21,7 @@ const Projects = () => {
 
         return (
           <Project
+            key={'id' + Math.random().toString(16).slice(2)}
             direction={direction}
             images={project.images}
             name={project.name}
